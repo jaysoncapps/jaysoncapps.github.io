@@ -17,7 +17,7 @@ title: Jayson Capps
 email: jaysoncapps@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Designer. Musician. Husband. Dad.
-baseurl: jaysoncapps.github.io # the subpath of your site, e.g. /blog
+baseurl: # the subpath of your site, e.g. /blog
 url: https://jaysoncapps.github.io/ # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: # jekyllrb
 github_username:  jaysoncapps
