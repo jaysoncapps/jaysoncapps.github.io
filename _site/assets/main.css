@@ -203,7 +203,7 @@ pre {
         .site-nav .page-link:not(:last-child) {
           margin-right: 0; } }
 
-.nav-trigger {
+input.nav-trigger {
   display: none; }
 
 /**
