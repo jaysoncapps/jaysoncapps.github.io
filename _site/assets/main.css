@@ -190,7 +190,7 @@ pre {
         text-align: center; }
         .site-nav .menu-icon > svg path {
           fill: #424242; }
-      .site-nav .nav-trigger {
+      .site-nav .trigger {
         clear: both;
         display: none; }
       .site-nav:hover .trigger {
@@ -202,6 +202,9 @@ pre {
         margin-left: 20px; }
         .site-nav .page-link:not(:last-child) {
           margin-right: 0; } }
+
+.nav-trigger {
+  display: none; }
 
 /**
  * Site footer

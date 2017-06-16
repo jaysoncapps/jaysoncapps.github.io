@@ -42,6 +42,8 @@
     }
   }
 
+
+    
   @include media-query($on-palm) {
     position: absolute;
     top: 9px;
@@ -65,7 +67,7 @@
       }
     }
 
-    .nav-trigger {
+    .trigger {
       clear: both;
       display: none;
     }
@@ -87,7 +89,7 @@
   }
 }
 
-
+.nav-trigger{display: none;}
 
 /**
  * Site footer
