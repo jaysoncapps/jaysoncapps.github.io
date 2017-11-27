@@ -3,18 +3,25 @@
 
   {% include head.html %}
 
-  <body>
+<body>
 
     {% include header.html %}
 
+    <div class="jumbotron">
+        <div class="wrapper">
+            <h1>Designer. Musician. Husband. Dad.</h1>
+            <p>I'm a designer based out of Albuquerque, New Mexico. I have been working as a graphic and user interface designer for over twenty years and have spent the last five years developing web sites and interfaces for University of New Mexico School of Law.</p>
+        </div>
+    </div>
+
     <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+        <div class="wrapper">
+            {{ content }}
+        </div>
     </main>
 
     {% include footer.html %}
 
-  </body>
+</body>
 
 </html>

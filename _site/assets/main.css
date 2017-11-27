@@ -7,13 +7,27 @@ dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0; }
 
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background: url(/assets/img/me-background.png) bottom right no-repeat, #eb5e28;
+  color: white; }
+
+.jumbotron p {
+  line-height: 1.6; }
+
+.jumbotron h1 {
+  font-size: 4.5rem;
+  font-weight: 800;
+  line-height: 1.2; }
+
 /**
  * Basic styling
  */
 body {
-  font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #111;
-  background-color: #fdfdfd;
+  font: 300 16px/1.5 "Hind", sans-serif;
+  color: #3C474D;
+  background-color: #f2f0e6;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -30,12 +44,24 @@ ul, ol, dl, figure,
 .highlight {
   margin-bottom: 15px; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif; }
+
 /**
  * Images
  */
 img {
   max-width: 100%;
   vertical-align: middle; }
+
+.img-thumbnail {
+  padding: .25rem;
+  background-color: #f2f0e6;
+  border: 1px solid #ddd;
+  border-radius: .25rem;
+  transition: all .2s ease-in-out;
+  max-width: 100%;
+  height: auto; }
 
 /**
  * Figures
@@ -60,26 +86,26 @@ li > ol {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400; }
+  font-weight: 300; }
 
 /**
  * Links
  */
 a {
-  color: #2a7ae2;
+  color: #eb5e28;
   text-decoration: none; }
   a:visited {
-    color: #1756a9; }
+    color: #b63f11; }
   a:hover {
-    color: #111;
+    color: #3C474D;
     text-decoration: underline; }
 
 /**
  * Blockquotes
  */
 blockquote {
-  color: #828282;
-  border-left: 4px solid #e8e8e8;
+  color: #323838;
+  border-left: 4px solid #95a1a1;
   padding-left: 15px;
   font-size: 18px;
   letter-spacing: -1px;
@@ -93,7 +119,7 @@ blockquote {
 pre,
 code {
   font-size: 15px;
-  border: 1px solid #e8e8e8;
+  border: 1px solid #95a1a1;
   border-radius: 3px;
   background-color: #eef; }
 
@@ -140,34 +166,37 @@ pre {
   display: inline-block;
   vertical-align: middle; }
   .icon > svg path {
-    fill: #828282; }
+    fill: #323838; }
 
 /**
  * Site header
  */
 .site-header {
-  border-top: 5px solid #424242;
-  border-bottom: 1px solid #e8e8e8;
+  background: #323838;
+  border-top: 5px solid #eb5e28;
   min-height: 56px;
   position: relative; }
 
 .site-title {
-  font-size: 26px;
-  font-weight: 300;
+  color: #f2f0e6;
+  font-size: 21px;
+  font-weight: 700;
   line-height: 56px;
-  letter-spacing: -1px;
+  letter-spacing: 1px;
   margin-bottom: 0;
-  float: left; }
+  float: left;
+  text-transform: uppercase; }
   .site-title, .site-title:visited {
-    color: #424242; }
+    color: #f2f0e6; }
 
 .site-nav {
   float: right;
-  line-height: 56px; }
+  line-height: 56px;
+  text-transform: uppercase; }
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
-    color: #111;
+    color: #eb5e28;
     line-height: 1.5; }
     .site-nav .page-link:not(:last-child) {
       margin-right: 20px; }
@@ -176,8 +205,8 @@ pre {
       position: absolute;
       top: 9px;
       right: 15px;
-      background-color: #fdfdfd;
-      border: 1px solid #e8e8e8;
+      background-color: #f2f0e6;
+      border: 1px solid #95a1a1;
       border-radius: 5px;
       text-align: right; }
       .site-nav .menu-icon {
@@ -189,7 +218,7 @@ pre {
         padding-top: 10px;
         text-align: center; }
         .site-nav .menu-icon > svg path {
-          fill: #424242; }
+          fill: black; }
       .site-nav .trigger {
         clear: both;
         display: none; }
@@ -210,7 +239,7 @@ input.nav-trigger {
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid #e8e8e8;
+  border-top: 1px solid #95a1a1;
   padding: 30px 0; }
 
 .footer-heading {
@@ -224,7 +253,7 @@ input.nav-trigger {
 
 .footer-col-wrapper {
   font-size: 15px;
-  color: #828282;
+  color: #323838;
   margin-left: -15px; }
 
 .footer-col {
@@ -265,17 +294,19 @@ input.nav-trigger {
   padding: 30px 0; }
 
 .page-heading {
-  font-size: 20px; }
+  font-size: 2em;
+  font-weight: 500; }
 
 .post-list {
   margin-left: 0;
   list-style: none; }
   .post-list > li {
+    border-bottom: #e1dcc4 1px solid;
     margin-bottom: 30px; }
 
 .post-meta {
   font-size: 14px;
-  color: #828282; }
+  color: #323838; }
 
 .post-link {
   display: block;
