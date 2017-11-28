@@ -16,7 +16,11 @@ dl, dd, ol, ul, figure {
 }
 
 .jumbotron p {line-height: 1.6;}
-.jumbotron h1 {font-size: 4.5rem;font-weight: 800;line-height: 1.2;}
+.jumbotron h1 {font-size: 4.5rem;font-weight: 800;line-height: 1.2;
+    @include media-query($on-palm) {
+    font-size: 16vw;
+  }
+}
 
 /**
  * Basic styling

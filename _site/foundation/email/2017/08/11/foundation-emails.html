@@ -37,7 +37,7 @@
       </span>
 
       <div class="trigger">
-          <a class="page-link" href="">Resume</a>
+          <a class="page-link" href="/assets/docs/jayson-capps-resume.pdf">Resume</a>
           <a class="page-link" href="mailto:jaysoncapps@gmail.com">Contact</a>
   <!--
           
@@ -80,9 +80,54 @@
   <div class="post-content" itemprop="articleBody">
     <p><img class="img-thumbnail" src="/assets/img/blog/foundation-screenshot.png" /></p>
 
-<p>At the School of Law we do a lot of email marketing. Building HTML emails can be super difficult and sometimes feels like you’re back in the 90’s coding.</p>
+<p>At the School of Law we do a lot of email marketing. Building HTML emails can be super difficult and can feel sometimes like you’re back in the 90’s coding since they rely on tables for layout.</p>
 
-<p>To see the live project, please go to the <a href="http://lawschool.unm.edu/admissions/html-email/template.html" target="_blank">UNM School of Law Campus Life</a> page.</p>
+<p><a href="https://foundation.zurb.com/emails">Foundation for Emails</a> removes a lot of the headache of tables since it built with <a href="https://foundation.zurb.com/emails/docs/inky.html">Inky</a>. Inky takes HTML tags like <code class="highlighter-rouge">&lt;row&gt;</code> and <code class="highlighter-rouge">&lt;columns&gt;</code> and converts them to complex tables. The less code the better! Also, their framework is responsive! Please see the examples below.</p>
+
+<p><strong>Inky Example</strong></p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;container&gt;</span>
+  <span class="nt">&lt;row&gt;</span>
+    <span class="nt">&lt;columns&gt;</span>Put content in me!<span class="nt">&lt;/columns&gt;</span>
+  <span class="nt">&lt;/row&gt;</span>
+<span class="nt">&lt;/container&gt;</span></code></pre></figure>
+
+<p><strong>Converts to HTML below</strong></p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">align=</span><span class="s">"center"</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;tbody&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;</span>
+        <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;tbody&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+              <span class="nt">&lt;th</span> <span class="na">class=</span><span class="s">"small-12 large-12 columns first last"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;table&gt;</span>
+                  <span class="nt">&lt;tr&gt;</span>
+                    <span class="nt">&lt;th&gt;</span>Put content in me!<span class="nt">&lt;/th&gt;</span>
+                    <span class="nt">&lt;th</span> <span class="na">class=</span><span class="s">"expander"</span><span class="nt">&gt;&lt;/th&gt;</span>
+                  <span class="nt">&lt;/tr&gt;</span>
+                <span class="nt">&lt;/table&gt;</span>
+              <span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+          <span class="nt">&lt;/tbody&gt;</span>
+        <span class="nt">&lt;/table&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span></code></pre></figure>
+
+<p>In addition to Inky, Foundation come with Gulp, Sass, Inliner, BrowserSync and Image Compression included in the stack. The workflow and automation are simply amazing.</p>
+
+<p>To see the UNM School of Law tempate, please visit <a href="http://lawschool.unm.edu/admissions/html-email/template.html" target="_blank">UNM School of Law Admissions HTML Email</a> page.</p>
+
+<h2>More Foundation Email Resources</h2>
+
+<ul>
+    <li><a href="https://foundation.zurb.com/emails.html">Foundation for Emails Site</a></li>
+    <li><a href="https://foundation.zurb.com/emails/zurb-stack.html">Zurb Stack</a></li>
+    <li><a href="https://foundation.zurb.com/emails/docs/">Email Docs</a></li>
+</ul>
 
 
   </div>

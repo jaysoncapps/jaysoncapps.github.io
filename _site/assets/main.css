@@ -20,6 +20,9 @@ dl, dd, ol, ul, figure {
   font-size: 4.5rem;
   font-weight: 800;
   line-height: 1.2; }
+  @media screen and (max-width: 600px) {
+    .jumbotron h1 {
+      font-size: 16vw; } }
 
 /**
  * Basic styling
@@ -182,7 +185,6 @@ pre {
   font-size: 21px;
   font-weight: 700;
   line-height: 56px;
-  letter-spacing: 1px;
   margin-bottom: 0;
   float: left;
   text-transform: uppercase; }
