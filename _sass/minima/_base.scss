@@ -13,6 +13,9 @@ dl, dd, ol, ul, figure {
     margin-bottom: 2rem;
     background: url(/assets/img/me-background.png) bottom right no-repeat, $brand-color;
     color: white;
+    @include media-query($on-palm) {
+    background: url(/assets/img/me-background.png) bottom center no-repeat, $brand-color;
+  }
 }
 
 .jumbotron p {line-height: 1.6;}
